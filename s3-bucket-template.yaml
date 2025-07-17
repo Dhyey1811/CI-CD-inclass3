@@ -3,11 +3,11 @@ Description: CloudFormation template to create an S3 bucket with versioning.
 
 Parameters:
   BucketName:
-    Description: "Name of the S3 bucket"
+    Description: The name of the S3 bucket
     Type: String
 
   VersioningStatus:
-    Description: "Enable or suspend versioning on the bucket"
+    Description: Enable or suspend versioning
     Type: String
     AllowedValues:
       - Enabled
@@ -24,5 +24,5 @@ Resources:
 
 Outputs:
   S3BucketName:
-    Description: "Name of the created S3 bucket"
+    Description: Name of the S3 bucket
     Value: !Ref MyS3Bucket
